@@ -11,6 +11,7 @@ body {
   z-index: 1;
   background: transparent;
   display: flex;
+  align-items: center;
   flex-direction: row-reverse;
 }
 
@@ -57,6 +58,7 @@ body {
   z-index: 1;
   background: transparent;
   display: flex;
+  align-items: center;
   flex-direction: row-reverse;
 }
 
