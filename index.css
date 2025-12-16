@@ -56,10 +56,11 @@ body {
 .greeting__fill {
   height: 80vh;
   display: flex;
+  justify-content: center;
 }
 
 .greeting__fill__logo mobile {
-  
+  width: 100%;
 }
 
 .about {
