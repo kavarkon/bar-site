@@ -70,10 +70,22 @@ p {
   font-weight: 300;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: start;
+  position: relative;
+  isolation: isolate;
 }
 
+.greeting__decor-mobile {
+  width: 100%;
+  bottom: 1%;
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  display: flex;
+}
+
+.cheers-img {
+  width: 100%;
+}
 
 
 .greeting__fill-mobile {
@@ -83,13 +95,20 @@ p {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  background: black;
+  background: transparent;
   display: flex;
+  position: absolute;
+  z-index: 1;
 }
+
+
 
 
 @media (min-width: 768px) {
   .greeting__fill-mobile {
+    display: none;
+  }
+  .greeting__decor-mobile {
     display: none;
   }
 }
@@ -99,7 +118,8 @@ p {
 }
 
 .working-hours {
-  margin: 32px;
+  margin: 30px;
+  background: transparent;
   color: white;
   font-size: 20px;
   display: flex;
