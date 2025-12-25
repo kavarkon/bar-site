@@ -1,15 +1,35 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url('fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-700.woff2') format('woff2');
+}
+
 body {
   margin: 0;
   background: black;
+}
+
+p {
+   font-family: "Montserrat", Arial, sans-serif;
 }
 
 .header {
   position: fixed;
   top: 0;
   height: 32px;
-  width: calc(100% - 32px);
-  margin: 16px;
-  z-index: 1;
+  width: calc(100vw - 40px);
+  margin: 20px;
+  z-index: 100;
   background: transparent;
   display: flex;
   align-items: center;
@@ -47,30 +67,26 @@ body {
   height: 100vh;
   width: 100%;
   background: black;
+  font-weight: 300;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 
 
 .greeting__fill-mobile {
-  height: 80%;
-  width: 90%;
+  height: calc(100% - 90px);
+  width: calc(100% - 40px);
+  margin: 20px;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   background: black;
   display: flex;
-
 }
 
-p {
-  width: 100%;
-  color: white;
-  font-size: 20px;
-}
 
 @media (min-width: 768px) {
   .greeting__fill-mobile {
@@ -80,6 +96,15 @@ p {
 
 .logo-mobile {
   width: 100%;
+}
+
+.working-hours {
+  margin: 32px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .about {
@@ -148,19 +173,28 @@ p {
 .footer {
   position: fixed;
   bottom: 0;
-  height: 32px;
-  width: calc(100% - 32px);
-  margin: 16px;
-  z-index: 1;
+  height: 40px;
+  width: calc(100vw - 40px);
+  margin: 20px;
+  z-index: 100;
   background: transparent;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
 .reservation-button {
   height: 100%;
-  background: #9e1512;
-  color: #feeb7a;
+  border-radius: 20px;
+  background: #feeb7a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.reservation-button__text {
+  font-size: 12px;
+  font-weight: 700;
+  color: black;
+  margin: 20px;
+}
