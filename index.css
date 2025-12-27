@@ -139,8 +139,6 @@ p {
 
 .about__decor_mobile {
   width: 100%;
-  right:0;
-  top: 0;
   position: absolute;
   z-index: 0;
   pointer-events: none;
@@ -148,7 +146,7 @@ p {
   flex-direction: column;
 }
 
-.image-lamp {
+.image-lamp_mobile {
   width: 100%;
 }
 
@@ -171,14 +169,14 @@ p {
   z-index: 1;
 }
 
-.point-one {
+.point-one_mobile {
   text-align: left;
   color: white;
   font-size: 30px;
   margin-bottom: 40%;
 }
 
-.point-one-two {
+.point-one-two_mobile {
   margin: 4vw;
   margin-bottom: 7vh;
   text-align: right;
@@ -186,13 +184,13 @@ p {
   font-size: 16px;
 }
 
-.about__point-wrapper {
+.about__point-wrapper_mobile {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
 
-.point-two {
+.point-two_mobile {
   margin: 0;
   text-align: center;
   color: white;
@@ -208,9 +206,42 @@ p {
 .events {
   height: 100vh;
   width: 100vw;
-  background: #f7e6e6;
+  background: black;
 }
 
+.events__decor_mobile {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-; */
+  justify-content: end;
+}
+
+.events__fill_mobile {
+  height: calc(100% - 90px - 8vh);
+  width: calc(100% - 40px);
+  margin: 20px;
+  margin-top: 11vh;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  background: transparent;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+}
+
+.microphone_mobile {
+  width: 60%;
+}
+
+.point-three_mobile {
+  color: white;
+}
 
 .menu {
   height: 100vh;
