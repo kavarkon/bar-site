@@ -16,7 +16,7 @@
 
 body {
   margin: 0;
-  background: black;
+  /* background: black; */
 }
 
 p {
@@ -65,7 +65,7 @@ p {
 
 .greeting {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background: black;
   font-weight: 300;
   display: flex;
@@ -131,24 +131,78 @@ p {
 
 .about {
   height: 100vh;
-  width: 100%;
-  background: #45a87f;
+  width: 100vw;
+  background: black;
   position: relative;
   isolation: isolate;
 }
 
 .about__decor_mobile {
+  width: 100%;
+  right:0;
+  top: 0;
   position: absolute;
-  inset: 0;
-  z-index: 1;
+  z-index: 0;
   pointer-events: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-lamp {
   width: 100%;
-  height: auto;
-  display: block;
 }
+
+/* .image-microphone { */
+/*   width: 100%; */
+/*   left: -20%; */
+/* } */
+
+.about__fill_mobile {
+  height: calc(100% - 90px);
+  width: calc(100% - 40px);
+  margin: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: transparent;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+}
+
+.point-one {
+  color: white;
+  font-size: 30px;
+  margin-top: 30%;
+}
+
+.point-wrapper {
+  padding-top: 30%;
+  /* padding-bottom: 5px; */
+  margin: 4vw;
+  margin-bottom: 20%;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #feeb7a;
+}
+
+.point-one-second {
+  margin-left: 3vw;
+  text-align: right;
+  color: white;
+  font-size: 20px;
+}
+
+/* .about__fill__point-1, */
+/* .about__fill__point-2 { */
+/*   background: transparent; */
+/*   color: white; */
+/*   font-size: 20px; */
+/*   display: flex; */
+/*   flex-direction: column; */
+/**/
+/*   align-items: flex-start; */
+/* } */
 
 
 @media (min-width: 768px) {
@@ -157,40 +211,37 @@ p {
   }
 }
 
-.about__text {
-  position: relative;
-  z-index: 2;
+.events {
+  height: 100vh;
+  width: 100vw;
+  background: #f7e6e6;
 }
+
 
 .menu {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background: #400808;
-}
-
-.events {
-  height: 100vh;
-  width: 100%;
-  background: #f7e6e6;
 }
 
 .discount {
   height: 100vh;
-  width: 100%;
-  background: #400808;
+  width: 100vw;
+  background: pink;
 }
 
 .banquet {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background: #45a87f;
 }
 
-.events {
+.contacts {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background: #f7e6e6;
 }
+
 
 .footer {
   position: fixed;
