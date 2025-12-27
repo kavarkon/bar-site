@@ -158,11 +158,12 @@ p {
 /* } */
 
 .about__fill_mobile {
-  height: calc(100% - 90px);
+  height: calc(100% - 90px - 8vh);
   width: calc(100% - 40px);
   margin: 20px;
+  margin-top: 11vh;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-between;
   background: transparent;
   display: flex;
@@ -171,39 +172,32 @@ p {
 }
 
 .point-one {
+  text-align: left;
   color: white;
   font-size: 30px;
-  margin-top: 30%;
+  margin-bottom: 40%;
 }
 
-.point-wrapper {
-  padding-top: 30%;
-  /* padding-bottom: 5px; */
+.point-one-two {
   margin: 4vw;
-  margin-bottom: 20%;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: #feeb7a;
-}
-
-.point-one-second {
-  margin-left: 3vw;
+  margin-bottom: 7vh;
   text-align: right;
   color: white;
   font-size: 20px;
 }
 
-/* .about__fill__point-1, */
-/* .about__fill__point-2 { */
-/*   background: transparent; */
-/*   color: white; */
-/*   font-size: 20px; */
-/*   display: flex; */
-/*   flex-direction: column; */
-/**/
-/*   align-items: flex-start; */
-/* } */
+.about__point-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
 
+.point-two {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
 
 @media (min-width: 768px) {
   .image-lamp {
